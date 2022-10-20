@@ -1,0 +1,211 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer--bg {
+  background-color: var(--dark);
+}
+.footer-position {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+@media (max-width: 767px) {
+  .footer-position {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-position {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.footer__logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+}
+.footer__logo-first-word {
+  color: #2196f3;
+  margin: 0;
+}
+.footer__logo-second-word {
+  color: var(--FFF);
+}
+
+.footer-contact {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+.footer-contact__padding {
+  padding-top: 20px;
+}
+@media (max-width: 1199px) {
+  .footer-contact__padding {
+    text-align: center;
+  }
+}
+.footer-contact__padding1 {
+  padding-top: 9px;
+}
+@media (max-width: 1199px) {
+  .footer-contact__padding1 {
+    text-align: center;
+  }
+}
+.footer-contact__adres {
+  text-decoration: none;
+  color: var(--FFF);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.174em;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contact__mail-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.174em;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-join-us {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--FFF);
+  padding: 12px 0px 20px 0;
+}
+@media (max-width: 1199px) {
+  .footer-join-us {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer-join-us__icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.footer-join-us__box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-join-us__box:hover,
+.footer-join-us__box:focus {
+  background: var(--blue);
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: var(--FFF);
+}
+
+.footer-join-us-newsletter {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 1199px) {
+  .footer-join-us-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.footer-join-us-newsletter__style {
+  outline: none;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1199px) {
+  .footer-join-us-newsletter__style {
+    width: 100%;
+  }
+}
+.footer-join-us-newsletter__style::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.footer-join-us-newsletter__style--bg {
+  color: var(--FFF);
+  background-color: #2f303a;
+}
+.footer-join-us-newsletter__button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  transition-duration: 250ms;
+  color: var(--FFF);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0 10px 42px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .footer-join-us-newsletter__button {
+    align-items: center;
+  }
+}
+.footer-join-us-newsletter__button--bg {
+  background: #2196f3;
+}
+.footer-join-us-newsletter__button:hover,
+.footer-join-us-newsletter__button:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
+

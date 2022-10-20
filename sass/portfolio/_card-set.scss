@@ -1,0 +1,177 @@
+.gallery-buttons {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 8px;
+}
+@media (max-width: 767px) {
+  .gallery-buttons {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery-buttons {
+    margin: 0 46px 0 47px;
+  }
+}
+.gallery-buttons__portfolio {
+  background: #F5F4FA;
+  color: var(--black);
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 6px 0 6px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+  letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .gallery-buttons__portfolio {
+    padding: 6px 22px 6px 22px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .gallery-buttons__style {
+    flex-basis: calc((100% - 16px) / 3);
+  }
+}
+.gallery-buttons__portfolio:hover, .gallery-buttons__portfolio:focus {
+  background: #2196F3;
+  color: var(--FFF);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.gallery-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .gallery-box {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery-box {
+    padding-top: 30px;
+  }
+}
+.gallery-box__item {
+  background: var(--FFF);
+}
+.gallery-box__item figure {
+  margin: 0;
+  padding: 0;
+  height: 294px;
+}
+@media screen and (max-width: 767px) {
+  .gallery-box__item figure {
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery-box__item {
+    width: 100%;
+  }
+}
+.gallery-box__item img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery-box__item {
+    flex-basis: calc((50% - 50px) / 2);
+  }
+  .gallery-box__item img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-box__item {
+    flex-direction: column;
+  }
+}
+.gallery-box__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-box__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(0%, 100%);
+}
+.gallery-box__hover-overlay {
+  position: relative;
+  overflow: hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-box__hover-overlay:hover .gallery-box__overlay {
+  opacity: 0.9;
+  transform: translateX(0);
+}
+.gallery-box__description {
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 49px 44px 48px 24px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .gallery-box__description {
+    padding: 30px 24px 30px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery-box__description {
+    padding: 49px 24px 49px 24px;
+  }
+}
+.gallery-box__first-description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  padding: 20px 10px 0px 24px;
+  margin: 0;
+  border-left: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
+}
+.gallery-box__second-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+  padding: 4px 10px 20px 24px;
+  margin: 0;
+  border-left: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+}

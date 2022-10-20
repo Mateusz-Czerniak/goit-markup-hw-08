@@ -1,0 +1,123 @@
+.section--bg {
+  background-color: var(--button);
+}
+
+.our-team {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .our-team {
+    font-size: 28px;
+  }
+}
+
+.box-our-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0 0 0;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .box-our-team {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box-our-team {
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+  }
+}
+.box-our-team__person {
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .box-our-team__person {
+    width: 100%;
+  }
+}
+.box-our-team__person img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box-our-team__person {
+    max-width: 354px;
+  }
+}
+.box-our-team__name-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  padding: 30px 0 10px 0;
+}
+.box-our-team__description-person {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187em;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+  margin: 0;
+  padding: 0 0 16px 0;
+}
+.box-our-team__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .box-our-team__icon {
+    padding: 0 0 24px 0;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-our-team__icon {
+    padding: 0 0 30px 0;
+  }
+}
+.box-our-team__icon-contact {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.box-our-team__icon-contact:hover,
+.box-our-team__icon-contact:focus {
+  background-color: var(--blue);
+}
+.box-our-team__icon-contact:hover .icon,
+.box-our-team__icon-contact:focus .icon {
+  fill: var(--FFF);
+}
+
+.icon-team {
+  color: var(--icon);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

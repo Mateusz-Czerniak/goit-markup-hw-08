@@ -1,0 +1,53 @@
+.what-we-do {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+  }
+  @media screen and (max-width: 1199px) {
+    .what-we-do {
+      display: none;
+    }
+  }
+  
+  .box-what-we-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 50px 0 0 0;
+    gap: 30px;
+  }
+  @media screen and (max-width: 1199px) {
+    .box-what-we-do {
+      display: none;
+    }
+  }
+  .box-what-we-do__z-index-image {
+    z-index: -1;
+  }
+  .box-what-we-do__figure {
+    width: 370px;
+    height: 294px;
+    margin: 0;
+  }
+  .box-what-we-do__text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 1432px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 142em;
+    text-transform: uppercase;
+  }
+  .box-what-we-do__text--style {
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--FFF);
+  }
